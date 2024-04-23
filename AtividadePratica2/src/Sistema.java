@@ -56,12 +56,12 @@ public class Sistema {
                 System.out.print("Numero da chamada do livro: ");
                 numeroChamada = Console.lerInt();
 
-                Livro f = Cadastro.buscar(numeroChamada);
+                Livro l = Cadastro.buscar(numeroChamada);
 
-                if (f != null) {
+                if (l != null) {
 
                     System.out.println("\nLivro Localizado:");
-                    System.out.println(f.toString());
+                    System.out.println(l.toString());
                     return;
 
                 }
