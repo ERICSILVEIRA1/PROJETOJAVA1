@@ -1,22 +1,33 @@
 public class Livro {
 
-    private int numeroChamada;
     private String titulo;
+    private String autor;
+    private int anoPublicacao;
 
     public Livro() {
+
     }
 
-    public Livro(int numeroChamada, String titulo) {
-        this.numeroChamada = numeroChamada;
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public int getAnoPublicacao() {
+        return anoPublicacao;
+    }
+
+    public void setAnoPublicacao(int anoPublicacao) {
+        this.anoPublicacao = anoPublicacao;
+    }
+
+    public Livro(String titulo, String autor, int anoPublicacao) {
         this.titulo = titulo;
-    }
-
-    public int getNumeroChamada() {
-        return numeroChamada;
-    }
-
-    public void setNumeroChamada(int numeroChamada) {
-        this.numeroChamada = numeroChamada;
+        this.autor = autor;
+        this.anoPublicacao = anoPublicacao;
     }
 
     public String getTitulo() {
@@ -30,12 +41,7 @@ public class Livro {
     @Override
     public String toString() {
 
-        return "\nNumero da chamada: " + numeroChamada + "\nTitulo: " + titulo;
-    }
-
-    public int numeroChamada() {
-
-        throw new UnsupportedOperationException("Unimplemented method 'numeroChamada'");
+        return "\nTitulo: " + titulo + "\nAutor: " + autor + "\nAno de publicação:" + anoPublicacao;
     }
 
 }
